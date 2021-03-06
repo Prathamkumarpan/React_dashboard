@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  text-transform: uppercase;
+}
+
+/* Navbar Section */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav .logo {
+  margin: 66px;
+}
+nav .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 72vh;
+}
+nav .navbar .links {
+  text-decoration: none;
+}
+/* Home section */
+section {
+  display: flex;
+  flex-direction: column;
+}
+.home_section {
+  height: 20vh;
+  width: 83vw;
+  display: flex;
+  position: relative;
+}
+.home_section .main{
+    position: absolute;
+    right:0;
+    top:50px;
+    width:280px;
+    display: flex;
+}
+.home_section .icons{
+    height:30px;
+    width:30px;
+}
+.inner_home_section{
+    display: flex;
+    height:20px;
+    width:155px;
+    align-items: center;
+}
+.inner_home_section h4{
+    font-size: 12px;
+}
+.inner_home_section img{
+    height:30px;
+    width: 30px;
+}
+.upcoming {
+  grid-area: one;
+  border: 2px solid black;
+  text-align: center;
+  overflow-y: scroll;
+}
+.upcoming div {
+  border: 1px solid black;
+  width: 100%;
+  height: 20%;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.upcoming div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+.tasks_to_do {
+  grid-area: two;
+  border: 2px solid black;
+  text-align: center;
+}
+.leaderboard {
+  grid-area: third;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* course Section */
+.my_courses {
+  grid-area: four;
+  border: 2px solid black;
+}
+.inner_course_first {
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+}
+.inner_course_second {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.inner_course_second .left_inner_course_second,
+.right_inner_course_second {
+  border: 2px solid black;
+  height: 100px;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.inner_course_second .right_inner_course_second {
+  margin-right: 20px;
+}
+.inner_course_second .left_inner_course_second img,
+.inner_course_second .right_inner_course_second img {
+  border: 2px solid green;
+  height: 50px;
+  width: 50px;
+  transform: translate(50%, -50%);
+}
+.inner_course_second .left_inner_course_second button,
+.inner_course_second .right_inner_course_second button {
+  width: 43%;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  transform: translate(1%);
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+}
+.inner_course_second .left_inner_course_second h2,
+.inner_course_second .right_inner_course_second h2 {
+  transform: translate(-5%);
+}
+
+/* home Work */
+.home_work {
+  grid-area: five;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* graph section */
+.graph {
+  grid-area: six;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.home_section_second {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "one two third"
+    "four four five"
+    "six . five";
+  grid-gap: 5px;
+}
+/* dashboard section */
+.dashboard_section,
+.mycourses_section,
+.achievement_section,
+.forum_section {
+  background: red;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Error Page */
+.errorPage {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  left: 40px;
+}
+.errorPage h1{
+    font-size: 70px;
+}
+.errorPage .link {
+  text-decoration: none;
+  font-size: 40px;
+}
